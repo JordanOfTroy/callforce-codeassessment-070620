@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
+import CalendarBody from './Components/CalendarBody'
+import Modal from './Components/Modal'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <CalendarBody/>
+      <Modal/>
     </div>
   );
 }
