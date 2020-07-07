@@ -49,3 +49,16 @@ table {
 * {
     box-sizing: border-box;
 }
+
+:root {
+	--color1: rgba(140,15,196,1);
+	--color2: rgba(255,55,110,1);
+	--color3: rgba(255,193,71,1);
+	--gradient: linear-gradient(130deg, var(--color1) 0%, var(--color2) 68%, var(--color3) 100%);
+}
+
+.App {
+	min-height: 100vh;
+	width: 100wv;
+	background: var(--gradient);
+}
