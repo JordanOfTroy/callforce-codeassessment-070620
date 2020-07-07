@@ -5,7 +5,8 @@
     height: 100vh;
     width: 100%;
     background-color: var(--overlay);
-    /* display: inline-flex; */
+    z-index: 10;
+    /* display: none; */
 }
 
 .modalBody {
@@ -15,6 +16,7 @@
     background-color: var(--white);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    z-index: 20;
 }
 
 .fa-times-hexagon {
