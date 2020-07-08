@@ -1,15 +1,12 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../styles/calendar.css'
 import TitleTable from './Title/TitleTable'
 import DateTable from './Date/DateTable'
 import CalendarTable from './Calendar/CalendarTable'
 import logo from '../media/logo-large.png'
 
-const CalendarBody = () => {
+const CalendarBody = (props) => {
 
-    const [stateObj, setStateObj] = useState({
-        titles: ['Doctor', 'Assistant', 'Hygienist']
-    })
 
     const showModal = () => {
         document.getElementById('modalOverlay').style.display = 'inline-flex'
@@ -29,7 +26,7 @@ const CalendarBody = () => {
                 </div>
                 <div className='col-10'>
                     <TitleTable
-                        titles = {stateObj.titles}
+                        titles = {props.titles}
                     />
                 </div>
             </div>

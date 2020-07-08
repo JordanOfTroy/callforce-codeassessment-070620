@@ -1,7 +1,9 @@
 import React from 'react'
 import '../styles/modal.css'
 
-const Modal = () => {
+const Modal = (props) => {
+
+    const {titles} = props
 
     const handleChange = () => {
         console.log('you are handling the change well')
@@ -33,9 +35,11 @@ const Modal = () => {
                         <div className='modalInputGroup p-2 mb-2'>
                             <p className='modalText pb-1'>Please select Title</p>
                             <select className='modalInput'>
-                                <option value='Doctor'>Doctor</option>
-                                <option value='Assistant'>Assistant</option>
-                                <option value='Hygienist'>Hygienist</option>
+                                {
+                                    titles.map((title, index) => {
+                                        return <option key={`${index}-${title}`} value={title}>{title}</option>
+                                    })
+                                }
                             </select>
                         </div>
                         <div className='modalInputGroup p-2 mb-2 startTimeGroup'>
