@@ -4,8 +4,22 @@ import CalendarRow from './CalendarRow'
 
 const CalendarColumn = () => {
     return(
-        <div className="calendarColumn">
-            <h1>CalendarColumn</h1>
+        <div className="calendarColumn p-1 mx-5">
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
+            <CalendarRow/>
             <CalendarRow/>
         </div>
     )

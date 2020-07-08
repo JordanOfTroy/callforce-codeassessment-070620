@@ -7,14 +7,16 @@ const Modal = () => {
         console.log('you are handling the change well')
     }
 
-    const handleClick = () => {
-        console.log('you are handling the click well')
-    }
-
     const closeModal = () => {
         console.log('you are closing the modal')
         document.getElementById('modalOverlay').style.display = 'none'
     }
+
+    const handleClick = () => {
+        console.log('you are handling the click well')
+        closeModal()
+    }
+
 
     return (
         <div className='modalOverlay centerMyStuff' id='modalOverlay'> 

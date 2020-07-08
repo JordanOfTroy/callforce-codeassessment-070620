@@ -4,8 +4,22 @@ import DateRow from './DateRow'
 
 const DateTable = () => {
     return(
-        <div className="dateTable">
-            <h1>DateTable</h1>
+        <div className="dateTable showMe p-1 d-flex flex-column justify-content-between align-items-center">
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
+            <DateRow/>
             <DateRow/>
         </div>
     )

@@ -12,16 +12,20 @@ const CalendarBody = () => {
     }
 
     return (
-        <div className='calendarBody p-3 showMe'>
-            <div className='titleGroup showMe'>
-                <img src={logo} alt='CallForce Logo' width='150'/>
-                <br/>
-                <button
-                    onClick={showModal}
-                ><i class="fas fa-plus"></i> Add Availability</button>
+        <div className='calendarBody'>
+            <div className='titleGroup p-3 d-flex justify-content-between'>
+                <div className='d-flex flex-column'>
+                    <img className=''
+                        src={logo}
+                        alt='CallForce Logo'
+                        width='150'/>
+                    <button className='my-2 btn btn-info'
+                        onClick={showModal}
+                    ><i class="fas fa-plus"></i> Add Availability</button>
+                </div>
                 <TitleTable/>
             </div>
-            <div className='dateGroup showMe'>
+            <div className='dateGroup showMe p-3 d-flex justify-content-between'>
                 <DateTable/>
                 <CalendarTable/>
             </div>

@@ -4,8 +4,9 @@ import CalendarColumn from './CalendarColumn'
 
 const CalendarTable = () => {
     return(
-        <div className="calendarTable">
-            <h1>CalendarTable</h1>
+        <div className="calendarTable showMe p-1 d-flex justify-content-between align-items-center">
+            <CalendarColumn/>
+            <CalendarColumn/>
             <CalendarColumn/>
         </div>
     )
