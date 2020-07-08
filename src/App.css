@@ -52,13 +52,14 @@ table {
 
 :root {
 	--color1: rgba(140,15,196,1);
+	--color1D: #460862;
 	--color2: rgba(255,55,110,1);
 	--color3: rgba(255,193,71,1);
 	--color4: #00B6A3;
 	--color4D: #009282;
 	--white: rgba(255, 255, 255, .95);
 	--black: #001210;
-	--gradient: linear-gradient(130deg, var(--color1) 0%, var(--color2) 68%, var(--color3) 100%);
+	--gradient: linear-gradient(130deg, var(--color1D) 0%, var(--color2) 68%, var(--color3) 100%);
 	--overlay: rgba(0, 0, 0, 0.5);
 	--radius: 7px;
 	--shadow: 12px 12px 20px 0px rgba(0,0,0,0.35);
@@ -81,4 +82,8 @@ table {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
+}
+
+.showMe {
+	border: solid white 2px;
 }

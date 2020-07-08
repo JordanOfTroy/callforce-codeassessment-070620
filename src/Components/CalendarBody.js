@@ -6,15 +6,22 @@ import CalendarTable from './Calendar/CalendarTable'
 import logo from '../media/logo-large.png'
 
 const CalendarBody = () => {
+
+    const showModal = () => {
+        document.getElementById('modalOverlay').style.display = 'inline-flex'
+    }
+
     return (
-        <div className='calendarBody'>
-            <div className='titleGroup'>
+        <div className='calendarBody p-3 showMe'>
+            <div className='titleGroup showMe'>
                 <img src={logo} alt='CallForce Logo' width='150'/>
                 <br/>
-                <button><i class="fas fa-plus"></i> Add Availability</button>
+                <button
+                    onClick={showModal}
+                ><i class="fas fa-plus"></i> Add Availability</button>
                 <TitleTable/>
             </div>
-            <div className='dateGroup'>
+            <div className='dateGroup showMe'>
                 <DateTable/>
                 <CalendarTable/>
             </div>

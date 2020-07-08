@@ -13,13 +13,14 @@ const Modal = () => {
 
     const closeModal = () => {
         console.log('you are closing the modal')
+        document.getElementById('modalOverlay').style.display = 'none'
     }
 
     return (
-        <div className='modalOverlay centerMyStuff'> 
+        <div className='modalOverlay centerMyStuff' id='modalOverlay'> 
             <div className='modalBody'>
                <div className='row p-2'>
-                    <div className='col-12'>
+                    <div className='col-12 d-flex justify-content-end'>
                         <i class="fal fa-times-hexagon"
                             onClick={closeModal}
                         ></i>
