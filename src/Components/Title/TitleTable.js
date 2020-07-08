@@ -2,12 +2,22 @@ import React from 'react'
 import '../../styles/titles.css'
 import TitleColumn from './TitleColumn'
 
-const TitleTable = () => {
+const TitleTable = (props) => {
+    const {titles} = props
+
     return(
-        <div className="titleTable showMe d-flex justify-content-between align-items-center w-75">
-            <TitleColumn/>
-            <TitleColumn/>
-            <TitleColumn/>
+        <div className="titleTable row h-100 d-flex justify-content-between align-items-stretch">
+            {
+                titles.map((title, index) => {
+                    return (
+                        <div className='col-sm m-2' key={index}>
+                            <TitleColumn
+                                title = {title}
+                            />
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }

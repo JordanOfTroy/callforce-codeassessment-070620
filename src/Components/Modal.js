@@ -31,7 +31,7 @@ const Modal = () => {
                <div className='row'>
                     <div className='col-12 d-flex flex-column align-items-center justify-content-center'>
                         <div className='modalInputGroup p-2 mb-2'>
-                            <p className='pb-1'>Please select Title</p>
+                            <p className='modalText pb-1'>Please select Title</p>
                             <select className='modalInput'>
                                 <option value='Doctor'>Doctor</option>
                                 <option value='Assistant'>Assistant</option>
@@ -39,7 +39,7 @@ const Modal = () => {
                             </select>
                         </div>
                         <div className='modalInputGroup p-2 mb-2 startTimeGroup'>
-                            <p className='pb-1'>Please select Start Time</p>
+                            <p className='modalText pb-1'>Please select Start Time</p>
                             <input className='modalInput'
                                 type='datetime-local'
                                 id='startInput'
@@ -48,7 +48,7 @@ const Modal = () => {
                                 />
                         </div>
                         <div className='modalInputGroup p-2 mb-2 endTimeGroup'>
-                            <p className='pb-1'>Please select End Time</p>
+                            <p className='modalText pb-1'>Please select End Time</p>
                             <input className='modalInput'
                                 type='datetime-local'
                                 id='endInput'

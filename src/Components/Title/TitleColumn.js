@@ -1,10 +1,13 @@
 import React from 'react'
 import '../../styles/titles.css'
 
-const TitleColumn = () => {
+const TitleColumn = (props) => {
+
+    const {title} = props
+
     return(
-        <div className="titleColumn mx-3">
-            <h1>Title Column</h1>
+        <div className="titleColumn row d-flex justify-content-center align-items-center h-100">
+            <h1>{title}</h1>
         </div>
     )
 }
