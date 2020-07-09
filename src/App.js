@@ -8,7 +8,7 @@ function App() {
 
 const [stateObj, setStateObj] = useState({
     titles: ['Doctor', 'Assistant', 'Hygienist'],
-    officeHours: {open: moment().set({'hour': 8, 'minute': 0}), close: moment().set({'hour': 17, 'minute': 0})}
+    officeHours: {open: moment().set({'hour': 8, 'minute': 0, 'second': 0}), close: moment().set({'hour': 17, 'minute': 0})}
 })
 
 // useEffect(() => {
