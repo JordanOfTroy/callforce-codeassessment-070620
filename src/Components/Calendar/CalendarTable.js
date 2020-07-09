@@ -16,24 +16,11 @@ const CalendarTable = (props) => {
                         <CalendarColumn
                             key={index}
                             title={title}
-                            officeHours = {officeHours}
+                            officeHours = {{...officeHours}}
                         />
                     )
                 })
             }
-            {/* <CalendarColumn
-                officeHours = {officeHours}
-                title = {titles[0]}
-            />
-            <CalendarColumn
-                officeHours = {officeHours}
-                title = {titles[1]}
-            />
-            <CalendarColumn
-                officeHours = {officeHours}
-                title = {titles[2]}
-            /> */}
-           
         </div>
     )
 }

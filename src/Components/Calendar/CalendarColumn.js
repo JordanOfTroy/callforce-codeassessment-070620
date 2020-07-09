@@ -20,21 +20,6 @@ const CalendarColumn = (props) => {
 		return makeTimeSlotArr(startTime, endTime, timeSlotArr)
     }
 
-    // const makeTimeSlotArr = (startTime, endTime) => {
-
-    //     const open = startTime.get('LT')
-    //     const close = endTime.get('LT')
-    //     console.log(open, close)
-    //     open = startTime.add(30, 'm')
-    //     console.log(open)
-    //     console.log()
-    //     const timeSlotArr = []
-
-    //     for (let i = startTime.get('h'); i < endTime.get('h'); i++) {
-    //         console.log('HELLO WORLD', test, i)
-    //     }
-    // }
-
     const timeSlotArr = makeTimeSlotArr(officeHours.open, officeHours.close)
 
     return(
