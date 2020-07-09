@@ -7,7 +7,7 @@ import logo from '../media/logo-large.png'
 
 const CalendarBody = (props) => {
 
-    const { officeHours } = props
+    const { officeHours, titles } = props
 
     const showModal = () => {
         document.getElementById('modalOverlay').style.display = 'inline-flex'
@@ -38,7 +38,10 @@ const CalendarBody = (props) => {
                     />
                 </div>
                 <div className='col-10'>
-                    <CalendarTable />
+                    <CalendarTable 
+                        officeHours = {officeHours}
+                        titles = {titles}
+                    />
                 </div>
             </div>
         </div>

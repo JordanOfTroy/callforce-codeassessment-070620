@@ -14,23 +14,12 @@ const DateTable = (props) => {
             return timeSlotArr
         }
 
-        console.log(startTime._d)
         timeSlotArr.push(startTime._d)
         startTime = moment(startTime.add(30, 'm'))
 
 		return makeTimeSlotArr(startTime, endTime, timeSlotArr)
     }
   
-    // const makeTimeSlotArr = (startTime, endTime) => {
-    //     console.log(startTime, endTime)
-    //     let timeArray = [];
-    //     for(let i = startTime; i._d < endTime._d; moment(i).add(30, 'm').toDate()){
-    //         timeArray.push(i);
-    //     }
-    //     console.log(timeArray);
-
-    //     return timeArray;
-    // }
     const timeSlotArr = makeTimeSlotArr(officeHours.open, officeHours.close)
 
     return(
