@@ -16,7 +16,7 @@ const CalendarTable = (props) => {
                         <CalendarColumn
                             key={index}
                             title={title}
-                            officeHours = {{...officeHours}}
+                            officeHours = {officeHours}
                         />
                     )
                 })
