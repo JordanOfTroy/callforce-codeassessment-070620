@@ -1,0 +1,4 @@
+.dateTable, .dateRow {
+    background-color: var(--whiteT);
+    border-radius: var(--radius);
+}

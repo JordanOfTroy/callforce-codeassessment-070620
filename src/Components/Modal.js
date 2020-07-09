@@ -25,7 +25,7 @@ const Modal = (props) => {
             <div className='modalBody'>
                <div className='row p-2'>
                     <div className='col-12 d-flex justify-content-end'>
-                        <i class="fal fa-times-hexagon"
+                        <i className="fal fa-times-hexagon"
                             onClick={closeModal}
                         ></i>
                     </div>

@@ -3,7 +3,7 @@ import '../../styles/date.css'
 
 const DateRow = () => {
     return(
-        <div className="dateRow mb-1 showMe">
+        <div className="dateRow row w-100 d-flex justify-content-center align-items-center">
             <h1>DateRow</h1>
         </div>
     )

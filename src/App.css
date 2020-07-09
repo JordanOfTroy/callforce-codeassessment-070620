@@ -67,8 +67,8 @@ table {
 }
 
 .App {
-	min-height: 100vh;
-	width: 100wv;
+	/* min-height: 100vh;
+	width: 100wv; */
 	background: var(--gradient);
 }
 
