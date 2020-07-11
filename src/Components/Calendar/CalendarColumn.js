@@ -16,7 +16,6 @@ const CalendarColumn = (props) => {
 
         timeSlotArr.push(startTime._d)
         startTime = moment(startTime.add(30, 'm'))
-
 		return makeTimeSlotArr(startTime, endTime, timeSlotArr)
     }
 
